@@ -5,9 +5,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(201, 221, 231);
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ /* Markdown */
+ .section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+ .markdown{
+   padding: 4rem;
+   display: grid;
+   row-gap: 4rem;
+ }
+ .input{
+   border-color: transparent;
+   border-radius: 0.25rem;
+   box-shadow: gray;
+   font-size: 1.2rem;
+   line-height: 2;
+   min-height: 30vh;
+ }
+ .input,
+ .result{
+   padding: 1rem 2rem;
+ }
+
+ @media screen and (min-width: 992px) {
+  .markdown {
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
 }
